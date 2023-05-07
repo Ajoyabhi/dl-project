@@ -5,6 +5,7 @@ $(function () {
 
 var infer = function () {
   $("#output").html("Inferring...");
+
   $("#resultContainer").show();
   $("html").scrollTop(100000);
 
@@ -111,9 +112,9 @@ var getSettingsFromForm = function (cb) {
   };
 
   var parts = [
-    "https://infer.roboflow.com/",
+    "https://detect.roboflow.com/",
     $("#model").val(),
-    "?access_token=" + $("#access_token").val(),
+    "?api_key=" + $("#access_token").val(),
   ];
 
   var classes = $("#classes").val();
