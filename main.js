@@ -114,7 +114,7 @@ var getSettingsFromForm = function (cb) {
   var parts = [
     "https://detect.roboflow.com/",
     $("#model").val(),
-    "?api_key=" + $("#access_token").val(),
+    "1/?api_key=" + $("#access_token").val(),
   ];
 
   var classes = $("#classes").val();
